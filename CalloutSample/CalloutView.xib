@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1P3-gD-G1o" customClass="CalloutView" customModule="CalloutSample" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="42.5" height="49"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="left" translatesAutoresizingMaskIntoConstraints="NO" id="LGl-wK-tzz">
+                    <rect key="frame" x="0.0" y="0.0" width="15" height="49"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="center" translatesAutoresizingMaskIntoConstraints="NO" id="RQ2-fG-NhJ">
+                    <rect key="frame" x="15" y="0.0" width="12.5" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="12.5" id="Gut-wG-wIs"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right" translatesAutoresizingMaskIntoConstraints="NO" id="cL1-2X-8LG">
+                    <rect key="frame" x="27.5" y="0.0" width="15" height="49"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mft-6P-Puj">
+                    <rect key="frame" x="10" y="14" width="22.5" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="cL1-2X-8LG" secondAttribute="trailing" id="1MK-KY-jY2"/>
+                <constraint firstItem="mft-6P-Puj" firstAttribute="top" secondItem="1P3-gD-G1o" secondAttribute="top" constant="14" id="CNa-eK-0RD"/>
+                <constraint firstItem="mft-6P-Puj" firstAttribute="leading" secondItem="1P3-gD-G1o" secondAttribute="leading" constant="10" id="Gku-O5-hoG"/>
+                <constraint firstAttribute="trailing" secondItem="mft-6P-Puj" secondAttribute="trailing" constant="10" id="Rb2-3Q-ccx"/>
+                <constraint firstItem="RQ2-fG-NhJ" firstAttribute="leading" secondItem="LGl-wK-tzz" secondAttribute="trailing" id="TF7-c8-6Or"/>
+                <constraint firstItem="RQ2-fG-NhJ" firstAttribute="centerX" secondItem="1P3-gD-G1o" secondAttribute="centerX" id="TeT-q9-Tjd"/>
+                <constraint firstItem="cL1-2X-8LG" firstAttribute="leading" secondItem="RQ2-fG-NhJ" secondAttribute="trailing" id="WaF-z6-AxL"/>
+                <constraint firstItem="cL1-2X-8LG" firstAttribute="top" secondItem="1P3-gD-G1o" secondAttribute="top" id="ZD8-P4-1jr"/>
+                <constraint firstItem="RQ2-fG-NhJ" firstAttribute="top" secondItem="1P3-gD-G1o" secondAttribute="top" id="eXz-dF-Q6f"/>
+                <constraint firstItem="LGl-wK-tzz" firstAttribute="leading" secondItem="1P3-gD-G1o" secondAttribute="leading" id="hVu-B8-AaQ"/>
+                <constraint firstItem="RQ2-fG-NhJ" firstAttribute="bottom" secondItem="1P3-gD-G1o" secondAttribute="bottom" id="lQ5-af-Kim"/>
+                <constraint firstItem="LGl-wK-tzz" firstAttribute="top" secondItem="1P3-gD-G1o" secondAttribute="top" id="nP9-IY-8f0"/>
+                <constraint firstItem="LGl-wK-tzz" firstAttribute="bottom" secondItem="1P3-gD-G1o" secondAttribute="bottom" id="pLW-Ti-Pdv"/>
+                <constraint firstItem="cL1-2X-8LG" firstAttribute="bottom" secondItem="1P3-gD-G1o" secondAttribute="bottom" id="qc2-Zo-xTS"/>
+                <constraint firstAttribute="bottom" secondItem="mft-6P-Puj" secondAttribute="bottom" constant="14" id="qwE-Fu-T1z"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="label" destination="mft-6P-Puj" id="cZL-S5-E6Z"/>
+            </connections>
+            <point key="canvasLocation" x="208.80000000000001" y="-396.70164917541234"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="center" width="12" height="49"/>
+        <image name="left" width="15" height="49"/>
+        <image name="right" width="15" height="49"/>
+    </resources>
+</document>
